@@ -11,7 +11,7 @@
 //! Compute the SHA-256 hash of the Bitcoin genesis block at compile time:
 //!
 //! ```rust
-//! # use sha2_const::Sha256;
+//! # use sha2_const_stable::Sha256;
 //! const VERSION: u32 = 1;
 //! const HASH_PREV_BLOCK: [u8; 32] = [0; 32];
 //! const HASH_MERKLE_ROOT: [u8; 32] = [
@@ -104,7 +104,7 @@ sha!(
     /// # Examples
     ///
     /// ```rust
-    /// # use sha2_const::Sha224;
+    /// # use sha2_const_stable::Sha224;
     /// const DIGEST: [u8; 28] = Sha224::new()
     ///     .update(b"The quick brown fox ")
     ///     .update(b"jumps over the lazy dog")
@@ -127,7 +127,7 @@ sha!(
     /// # Examples
     ///
     /// ```rust
-    /// # use sha2_const::Sha256;
+    /// # use sha2_const_stable::Sha256;
     /// const DIGEST: [u8; 32] = Sha256::new()
     ///     .update(b"The quick brown fox ")
     ///     .update(b"jumps over the lazy dog")
@@ -153,7 +153,7 @@ sha!(
     /// # Examples
     ///
     /// ```rust
-    /// # use sha2_const::Sha384;
+    /// # use sha2_const_stable::Sha384;
     /// const DIGEST: [u8; 48] = Sha384::new()
     ///     .update(b"The quick brown fox ")
     ///     .update(b"jumps over the lazy dog")
@@ -179,7 +179,7 @@ sha!(
     /// # Examples
     ///
     /// ```rust
-    /// # use sha2_const::Sha512;
+    /// # use sha2_const_stable::Sha512;
     /// const DIGEST: [u8; 64] = Sha512::new()
     ///     .update(b"The quick brown fox ")
     ///     .update(b"jumps over the lazy dog")
@@ -208,7 +208,7 @@ sha!(
     /// # Examples
     ///
     /// ```rust
-    /// # use sha2_const::Sha512_224;
+    /// # use sha2_const_stable::Sha512_224;
     /// const DIGEST: [u8; 28] = Sha512_224::new()
     ///     .update(b"The quick brown fox ")
     ///     .update(b"jumps over the lazy dog")
@@ -234,7 +234,7 @@ sha!(
     /// # Examples
     ///
     /// ```rust
-    /// # use sha2_const::Sha512_256;
+    /// # use sha2_const_stable::Sha512_256;
     /// const DIGEST: [u8; 32] = Sha512_256::new()
     ///     .update(b"The quick brown fox ")
     ///     .update(b"jumps over the lazy dog")
